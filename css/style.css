@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,500&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+/* Primera paleta, menos legible 
+:root {
+    --text: #000000;
+--background: #ffffff;
+--primary: #a06060;
+--secondary: #d29e9e;
+--accent: #f43a3a;
+} */
+
+:root {
+    --text: #000000;
+--background: #ffffff;
+--primary: #c44e4f;
+--secondary: #dcd095;
+--card: #dcd0957b;
+--accent: #cbd073;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+header {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header p {
+    font-size: 3.125rem;
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    gap: 1.5625rem;
+}
+
+.navbar li a {
+    /* flex-direction: row; */
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer {
+    background-color: var(--secondary);
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--primary);
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    padding: 1.5625rem 0 25px 0;
+}
+
+.main-textbox {
+    background-color: var(--card);
+    display: flex;
+    gap: 2.1875rem;
+    padding: 1.5625rem;
+}
+
+.main-textbox article {
+    flex-direction: row;
+}
+
+.service-card {
+    background-color: var(--card);
+    display: flex;
+    gap: 2.1875rem;
+    padding: .9375rem;
+}
+
+.project-card {
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    padding: 3.125rem 1.5625rem 0 1.5625rem;
+}
+
+.project-card article {
+    padding-bottom: 3.125rem;
+}
+
